@@ -5,25 +5,25 @@ function BMI(weight، height) {
 
 console.log(BMI(53,1.55));
 
-function status(bmi){
+function Status(bmi){
 if (bmi<18.5) {
-    return"لديك نقص في الوزن"
+    return"لديك نقص في الوزن";
 } else if (bmi>=18.5 && bmi<25) {
-    return "وزنك صحي"
+    return "وزنك صحي";
 } else{
     return "لديك زيادة في الوزن";
 }
 }
 
 function calculate() {
-    let weight =document.getElementById(weight).value
-    let height  =document.getElementById(height).value
+    let weight =document.getElementById("weight").value
+    let height  =document.getElementById("height").value
 
 let bmi = BMI(weight,height);
  
-let desc = Status(bmi)
+let desc = Status("bmi")
 
-let div =document.getElementById('result')
+let div =document.getElementById("result")
 
-div.innerTEXT = bmi + " ==" + desc
+div.innerText = bmi + " ==" + desc
 }
